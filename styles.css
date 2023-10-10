@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.container button{
+    width: 10%;
+    height: 5%;
+    font-size: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    background-color: #2c3e50; /* Sets the background color of the button to a dark blue shade */
+    color: #fff; /* Sets the text color of the button to white */
+    border-radius: 5px; /* Adds rounded corners to the button */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow effect to the button */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+
+}
+button:hover {
+    background-color: #34495e; /* Changes the background color of the button to a darker shade on hover */
+    transform: scale(1.1); /* Enlarges the button slightly on hover */
+}
+
+/* CSS Animation keyframes for scaling and fading effect */
+@keyframes scaleAndFade {
+    0% {
+        transform: scale(1); /* Initial scale value for the animation */
+        opacity: 1; /* Initial opacity value for the animation */
+    }
+    50% {
+        transform: scale(1.2); /* Midway scale value for the animation */
+        opacity: 0.8; /* Midway opacity value for the animation */
+    }
+    100% {
+        transform: scale(1); /* Final scale value for the animation */
+        opacity: 1; /* Final opacity value for the animation */
+    }
+}
+
+/* Class for applying the scaling and fading animation */
+.change-background-animation {
+    animation: scaleAndFade 0.5s ease; /* Applies the defined keyframe animation with a 0.5s duration and ease timing function */
+}
